@@ -1,0 +1,33 @@
+.site__footer {
+  padding-bottom: 56px;
+}
+.line__footer{
+  margin-bottom: 60px;
+  background-color: #D9DBE9;
+  height: 0px;
+}
+.footer__text {
+  padding-top: 19px;
+}
+.form__footer-input {
+  padding: 27px 341px 27px 31px;
+  border-radius: 60px;
+  border: 1px solid var(--neutral-300, #eff0f6);
+  background: var(--neutral-100, #fff);
+  box-shadow: 0px 8px 25px 0px rgba(13, 10, 44, 0.06);
+}
+.form__footer-btn {
+  position: absolute;
+  bottom: 11px;
+  right:18px;
+  padding: 17px 26px;
+  border: none;
+  border-radius: 56px;
+  background: var(--primary-color-1, #4a3aff);
+  box-shadow: 0px 3px 12px 0px rgba(74, 58, 255, 0.18);
+  color: var(--neutral-100, #fff);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}

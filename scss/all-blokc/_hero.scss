@@ -1,0 +1,129 @@
+.site-main {
+  padding-top: 58px;
+  padding-bottom: 157px;
+}
+.hero {
+  width: 500px;
+  display: flex;
+  margin: 0 auto;
+  &__register {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 60px;
+    border: 2px solid #dbdbdb;
+    background: #fff;
+    box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.05);
+    &--title {
+      margin-bottom: 5px;
+      color: #000;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: normal;
+    }
+    &--text {
+      margin-bottom: 35px;
+      color: #000;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    &--label {
+      position: relative;
+      color: #121826;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: normal;
+    }
+    &--star {
+      color: #f00;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: normal;
+    }
+    &--check-text {
+      padding-right: 10px;
+      padding-left: 13px;
+      color: #000;
+      font-size: 14px;
+      line-height: normal;
+    }
+    &--check-link {
+      color: #000;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: normal;
+      text-decoration-line: underline;
+    }
+    &--btn {
+      color: #fff;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 28px;
+      padding: 20px 60px;
+      border-radius: 8px;
+      border: none;
+      background-color: #2c28e1;
+    }
+  }
+  &__columns {
+    display: flex;
+    flex-direction: column;
+    width: 173.7px;
+  }
+  &__input--style {
+    color: #6c727f;
+    font-size: 14px;
+    line-height: normal;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--Input-border-color);
+    background: #fff;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05);
+    &:focus {
+      outline: none;
+    }
+    z-index: 22;
+  }
+  &__position {
+    position: absolute;
+    left: 10px;
+    top: -8px;
+    padding-left: 4px;
+    padding-right: 3px;
+    z-index: 77;
+    background-color: #fff;
+  }
+  &__position1 {
+    left: 213px;
+  }
+  &__position2 {
+    top: -8px;
+    left: 10px;
+  }
+  &__columns1 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.input-group {
+  display: flex;
+  column-gap: 30px;
+}
+.error {
+  color: #ff0707;
+  font-size: 8px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.input-border {
+  border: 1px solid #ff0707;
+}

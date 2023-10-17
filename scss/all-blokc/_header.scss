@@ -1,0 +1,20 @@
+.site__header{
+  padding-top: 47px;
+  padding-bottom: 45px;
+}
+.site__header-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site__header-btn{
+  padding: 20px 40px;
+  border-radius: 56px;
+  border: none;
+  background-color: var(--primary-color-1, #4A3AFF);
+  box-shadow: 0px 3px 12px 0px rgba(74, 58, 255, 0.18);
+  color:#fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px; 
+}

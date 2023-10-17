@@ -50,7 +50,9 @@
                   placeholder="Your name"
                   required
                 />
-                <span class="js-feedback d-none error">Input must not be empty!</span>
+                <span class="js-feedback d-none error"
+                  >Input must not be empty!</span
+                >
               </div>
               <div class="hero__columns">
                 <label
@@ -65,7 +67,9 @@
                   placeholder="Your last name"
                   required
                 />
-                <span class="js-feedback d-none error">Input must not be empty!</span>
+                <span class="js-feedback d-none error"
+                  >Input must not be empty!</span
+                >
               </div>
             </div>
             <div class="hero__columns1 position-relative">
@@ -81,7 +85,9 @@
                 placeholder="yourmail@gmail.com"
                 required
               />
-              <span class="js-feedback d-none error">The last letters of the email must end with @gmail.com</span>
+              <span class="js-feedback d-none error"
+                >The last letters of the email must end with @gmail.com</span
+              >
             </div>
             <div class="hero__columns1 position-relative">
               <label
@@ -96,7 +102,9 @@
                 placeholder=".........."
                 required
               />
-              <span class="js-feedback d-none error">Input must not be empty!</span>
+              <span class="js-feedback d-none error"
+                >Input must not be empty!</span
+              >
             </div>
             <div class="hero__columns1 position-relative">
               <label
@@ -111,7 +119,9 @@
                 placeholder=".........."
                 required
               />
-              <span class="js-feedback d-none error">The password must be the same!</span>
+              <span class="js-feedback d-none error"
+                >The password must be the same!</span
+              >
             </div>
             <div class="hero__columns1 position-relative">
               <label
@@ -119,7 +129,11 @@
                 for="gender"
                 >Gender <span class="hero__form--star">*</span></label
               >
-              <select class="js__form--gender hero__input--style" id="gender" required>
+              <select
+                class="js__form--gender hero__input--style"
+                id="gender"
+                required
+              >
                 <option selected>Select your gender</option>
                 <option value="male">Male</option>
                 <option value="famale">Famale</option>
@@ -138,11 +152,17 @@
                 id="birthday_date"
                 required
               />
-              <span class="js-feedback d-none error">Input must not be empty!</span>
+              <span class="js-feedback d-none error"
+                >Input must not be empty!</span
+              >
             </div>
             <div>
               <div class="d-flex align-items-start">
-                <input class="js-hero__form--check mt-1" type="checkbox" required/>
+                <input
+                  class="js-hero__form--check mt-1"
+                  type="checkbox"
+                  required
+                />
                 <p class="hero__form--check-text mb-0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   <a class="hero__form--check-link" href="#">
@@ -156,21 +176,272 @@
           </form>
         </div>
       </section>
-      <section>
+      <section class="contact">
         <div class="container">
-          <ul>
-            <li>
-
-            </li>
-            
-          </ul>
+      <div class="contact__carusel ">
+        <div class="carusel__inner">
+          <h2 class="carusel__title hero__register--title">Get a project quote</h2>
+          <p class="carusel__desc hero__register--text">
+            Please fill the form below to receive a quote for your project.
+            Feel free to add as much detail as needed.
+          </p>
         </div>
+        <form id="carouselExample" class="carusel__form carousel slide">
+          <ol class="carusel__list carousel-inner">
+            <li class="carusel__contact carousel-item active">
+              <img
+                src="./images/carusel1.svg"
+                max-width="600"
+                width="100%"
+                style="
+                  margin-bottom: 64px;
+                  border-bottom: 2px solid #d9dbe9;
+                  padding: 0 40px 32px;
+                "
+                alt=""
+              />
+              <h3 class="carusel__subtitle">Contact details</h3>
+              <p class="carusel__subtext">
+                Lorem ipsum dolor sit amet consectetur adipisc.
+              </p>
+              <ul class="contact-list">
+                <li class="contact__item">
+                  <label class="contact__name-wr">
+                    Name
+                    <input
+                      class="contact__name"
+                      type="text"
+                      placeholder="John Carter"
+                    />
+                    <span class="contact__error-span"
+                      >Your name should be no less than 2 and no more than
+                      30 letters</span
+                    >
+                  </label>
+                  <label class="contact__email-wr">
+                    Email
+                    <input
+                      class="contact__email"
+                      type="email"
+                      placeholder="Email address"
+                    />
+                    <span class="contact__error-span"
+                      >The last letters of the email must end with
+                      @gmail.com or @mail.ru</span
+                    >
+                  </label>
+                </li>
+                <li class="contact__item">
+                  <label class="contact__tel-wr">
+                    Phone Number
+                    <input
+                      class="contact__tel"
+                      type="tel"
+                      placeholder="(123) 456 - 7890"
+                    />
+                    <span class="contact__error-span"
+                      >The phone number must not be more or less than 13 and
+                      start with +998</span
+                    >
+                  </label>
+                  <label class="contact__company-wr">
+                    Company
+                    <input
+                      class="contact__company"
+                      type="text"
+                      placeholder="Company name"
+                    />
+                    <span class="contact__error-span">ghjkfghjk</span>
+                  </label>
+                </li>
+              </ul>
+            </li>
+            <li class="carusel__service carousel-item">
+              <img
+                src="./images/carusel2.svg"
+                max-width="600"
+                width="100%"
+                style="
+                  margin-bottom: 64px;
+                  border-bottom: 2px solid #d9dbe9;
+                  padding: 0 40px 32px;
+                "
+                alt=""
+              />
+              <h3 class="carusel__subtitle">Our services</h3>
+              <p class="carusel__subtext">
+                Please select which service you are interested in.
+              </p>
+              <ul class="contact">
+                <li class="service__item">
+                  <input
+                    id="deving"
+                    type="radio"
+                    class="service-dev visually-hidden"
+                    name="select-radio"
+                  />
+                  <label for="deving" class="service__dev">
+                    <img src="./images/develop.svg" alt="" />
+                    <span class="service__text">Development</span>
+                  </label>
+                  <input
+                    id="desing"
+                    type="radio"
+                    class="service-des visually-hidden"
+                    name="select-radio"
+                  />
+                  <label for="desing" class="service__des">
+                    <img src="./images/design.svg" alt="" />
+                    <span class="service__text">Web Design</span>
+                  </label>
+                </li>
+                <li class="service__item">
+                  <input
+                    id="marking"
+                    type="radio"
+                    class="service-mrk visually-hidden"
+                    name="select-radio"
+                  />
+                  <label for="marking" class="service__mrk">
+                    <img src="./images/marketing.svg" alt="" />
+                    <span class="service__text">Marketing</span>
+                  </label>
+                  <input
+                    id="othering"
+                    type="radio"
+                    class="service-othr visually-hidden"
+                    name="select-radio"
+                  />
+                  <label for="othering" class="service__othr">
+                    <img src="./images/other.svg" alt="" />
+                    <span class="service__text">Other</span>
+                  </label>
+                </li>
+              </ul>
+            </li>
+            <li class="carusel__budget carousel-item">
+              <img
+                src="./images/carusel3.svg"
+                max-width="600"
+                width="100%"
+                style="
+                  margin-bottom: 64px;
+                  border-bottom: 2px solid #d9dbe9;
+                  padding: 0 40px 32px;
+                "
+                alt=""
+              />
+              <h3 class="carusel__subtitle">What’s your project budget?</h3>
+              <p class="carusel__subtext">
+                Please select the project budget range you have in mind.
+              </p>
+              <ul class="budget">
+                <li class="budget__item">
+                  <input
+                    class="budget__input-start"
+                    id="start"
+                    type="radio"
+                    name="budget"
+                  />
+                  <label class="budget__label-start" for="start">
+                    $5.000 - $10.000
+                  </label>
+                </li>
+                <li class="budget__item">
+                  <input
+                    class="budget__input-comford"
+                    id="comford"
+                    type="radio"
+                    name="budget"
+                  />
+                  <label class="budget__label-comford" for="comford">
+                    $10.000 - $20.000
+                  </label>
+                </li>
+                <li class="budget__item">
+                  <input
+                    class="budget__input-gold"
+                    id="gold"
+                    type="radio"
+                    name="budget"
+                  />
+                  <label class="budget__label-gold" for="gold">
+                    $20.000 - $50.000
+                  </label>
+                </li>
+                <li class="budget__item">
+                  <input
+                    class="budget__input-premium"
+                    id="premium"
+                    type="radio"
+                    name="budget"
+                  />
+                  <label class="budget__label-premium" for="premium">
+                    + $50.000
+                  </label>
+                </li>
+              </ul>
+            </li>
+            <li class="carusel__cheek carousel-item">
+              <img
+                src="./images/carusel4.svg"
+                max-width="600"
+                width="100%"
+                style="
+                  margin-bottom: 41px;
+                  border-bottom: 2px solid #d9dbe9;
+                  padding: 0 40px 32px;
+                "
+                alt=""
+              />
+              <img
+                src="./images/cheek.svg"
+                style="margin: 0 auto 18px"
+                alt=""
+              />
+              <div class="cheek-wr">
+                <h3 class="carusel__subtitle many">
+                  Submit your quote request
+                </h3>
+                <p class="carusel__subtext">
+                  Please review all the information you previously typed in
+                  the past steps, and if all is okay, submit your message to
+                  receive a project quote in 24 - 48 hours.
+                </p>
+              </div>
+              <button class="carusel__last-btn" type="submit">
+                Preview
+              </button>
+            </li>
+          </ol>
+          <div class="button-wrapper">
+            <button
+              class="carousel-control-prev back"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              Previous step
+            </button>
+            <button
+              class="carousel-control-next next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              Next step
+            </button>
+          </div>
+        </div>
+        </form>
       </section>
     </main>
     <footer class="site__footer">
       <hr class="line__footer" />
       <div class="container">
-        <div class="footer__wrapper d-flex align-items-center justify-content-between">
+        <div
+          class="footer__wrapper d-flex align-items-center justify-content-between"
+        >
           <div class="footer__start">
             <a class="site__footer-logo" href="#">
               <img

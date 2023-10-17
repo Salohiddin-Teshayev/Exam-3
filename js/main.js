@@ -74,3 +74,71 @@ elForms.addEventListener("submit", function (evt) {
   //   return;
   // }
 });
+
+let elCarForm = document.querySelector(".form__carusel");
+let elContactC = document.querySelector(".carusel__contact");
+let elServiceC = document.querySelector(".carusel__services");
+let elBudgetC = document.querySelector(".carusel__bud ");
+let elCheekC = document.querySelector(".carusel__cheek ");
+let elNameWr = document.querySelector(".contact__name-wrapper");
+let elEmailWr = document.querySelector(".contact__email-wrapper");
+let elTelWr = document.querySelector(".contact__tel-wrapper");
+let elContactName = document.querySelector(".contact__name");
+let elContactEmail = document.querySelector(".contact__email");
+let elContactTel = document.querySelector(".contact__tel");
+let elContactCompany = document.querySelector(".contact__com");
+let elBack = document.querySelector(".back");
+let elNext = document.querySelector(".next");
+
+elCarForm.addEventListener("submit", function (evt) {
+  evt.preventDefault();
+
+  let contactName = elContactName.value.trim();
+  let contactEmail = elContactEmail.value.trim();
+  let contactTel = elContactTel.value.trim();
+  let contactCompany = elContactCompany.value.trim();
+
+  if (contactName.length < 2) {
+    elNameWr.classList.add("error");
+    return;
+  } else {
+    elNameWr.classList.remove("error");
+  }
+
+  if (contactName.length > 30) {
+    elNameWr.classList.add("error");
+    return;
+  } else {
+    elNameWr.classList.remove("error");
+  }
+
+  for (let a = 0; a < contactName.length; a++) {
+    if (
+      contactName[a] == "0" ||
+      contactName[a] == "1" ||
+      contactName[a] == "2" ||
+      contactName[a] == "3" ||
+      contactName[a] == "4" ||
+      contactName[a] == "5" ||
+      contactName[a] == "6" ||
+      contactName[a] == "7" ||
+      contactName[a] == "8" ||
+      contactName[a] == "9"
+    ) {
+      elNameWr.classList.add("error");
+      return;
+    } else {
+      elNameWr.classList.remove("error");
+    }
+  }
+ 
+  if (
+    contactEmail.endsWith("@gmail.com") ||
+    contactEmail.endsWith("@mail.ru")
+  ) {
+    elEmailWr.classList.remove("error");
+    return;
+  } else {
+    elEmailWr.classList.add("error");
+  }
+});

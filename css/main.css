@@ -431,6 +431,7 @@ img {
 }
 
 .hero {
+  padding-bottom: 50px;
   width: 500px;
   display: flex;
   margin: 0 auto;
